@@ -1,0 +1,180 @@
+Variables
+Variables are containers for storing data values.
+****************************************************************************
+
+Creating Variables
+Python has no command for declaring a variable.
+
+****************************************************************************
+
+A variable is created the moment you first assign a value to it.
+
+****************************************************************************
+
+Example:
+  x = 5
+  y = "John"
+  print(x)
+  print(y)
+  
+ **************************************************************************** 
+  
+  
+  Expressions in Python :
+  An expression is a combination of operators and operands that is interpreted to produce some other value. 
+  In any programming language, an expression is evaluated as per the precedence of its operators. 
+  So that if there is more than one operator in an expression, 
+  their precedence decides which operation will be performed first. 
+  We have many different types of expressions in Python.
+ 
+ ****************************************************************************  
+  1. Constant Expressions: These are the expressions that have constant values only.
+  Example:
+    x = 15 + 1.3
+    print(x)
+  Output :
+    16.3
+  
+ ****************************************************************************   
+  2. Arithmetic Expressions: An arithmetic expression is a combination of numeric values, operators, 
+  and sometimes parenthesis. The result of this type of expression is also a numeric value. 
+  The operators used in these expressions are arithmetic operators like addition, subtraction, etc. 
+  Here are some arithmetic operators in Python:
+  Operators	  Syntax	  Functioning
+  +	          x + y	    Addition
+  –	          x – y	    Subtraction
+  *         	x * y	    Multiplication
+  /	          x / y 	  Division
+  //	        x // y	  Quotient
+  %	          x % y 	  Remainder
+  **	        x ** y	  Exponentiation
+  
+Example:
+  x = 40
+  y = 12
+  
+  add = x + y
+  sub = x - y
+   pro = x * y
+  div = x / y
+  
+  print(add)
+  print(sub)
+  print(pro)
+  print(div)
+Output
+  52
+   28
+  480
+  3.3333333333333335
+
+ ****************************************************************************   
+3. Integral Expressions: These are the kind of expressions that produce only integer results after all computations and type conversions.
+
+Example:
+    a = 13
+    b = 12.0
+  
+    c = a + int(b)
+    print(c)
+Output:25
+
+ **************************************************************************** 
+4. Floating Expressions: These are the kind of expressions which produce floating point numbers as result after all computations and type conversions.
+
+Example:
+  a = 13
+   b = 5
+  
+  c = a / b
+  print(c)
+ Output
+  2.6
+ 5. Relational Expressions: In these types of expressions, arithmetic expressions are written on both sides of relational operator (> , < , >= , <=). 
+ Those arithmetic expressions are evaluated first, and then compared as per relational operator and produce a boolean output in the end. 
+ These expressions are also called Boolean expressions.
+
+Example:
+a = 21
+b = 13
+c = 40
+d = 37
+  
+p = (a + b) >= (c - d)
+print(p)
+Output
+True
+
+ **************************************************************************** 
+6. Logical Expressions: These are kinds of expressions that result in either True or False. 
+It basically specifies one or more conditions. For example, (10 == 9) is a condition if 10 is equal to 9. 
+As we know it is not correct, so it will return False. Studying logical expressions, 
+we also come across some logical operators which can be seen in logical expressions most often. 
+Here are some logical operators in Python:
+Operator	  Syntax	    Functioning
+and	        P and Q	    It returns true if both P and Q are true otherwise returns false
+or        	P or Q	    It returns true if at least one of P and Q is true
+not	        not P	      It returns true if condition P is false
+
+Example:
+
+Let’s have a look at an exemplar code :
+P = (10 == 9)
+Q = (7 > 5)
+  
+# Logical Expressions
+R = P and Q
+S = P or Q
+T = not P
+  
+print(R)
+print(S)
+print(T)
+Output:
+False
+True
+True
+
+**************************************************************************** 
+7. Bitwise Expressions: These are the kind of expressions in which computations are performed at bit level.
+
+Example:
+a = 12
+  
+x = a >> 2
+y = a << 1
+  
+print(x, y)
+Output
+3 24
+
+**************************************************************************** 
+8. Combinational Expressions: We can also use different types of expressions in a single expression, 
+and that will be termed as combinational expressions.
+
+Example:
+a = 16
+b = 12
+  
+c = a + (b >> 1)
+print(c)
+Output:
+22
+   ****************************************************************************
+Statements :
+A statement is an instruction that the Python interpreter can execute. We have seen two kinds of statements: print and assignment.
+When you type a statement on the command line, Python executes it and displays the result, 
+if there is one. The result of a print statement is a value. Assignment statements don't produce a result.
+A script usually contains a sequence of statements. If there is more than one statement, 
+the results appear one at a time as the statements execute.
+
+For example, the script
+
+print 1
+x = 2
+print x
+
+produces the output
+
+1
+2
